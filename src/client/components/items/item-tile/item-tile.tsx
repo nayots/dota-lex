@@ -19,7 +19,7 @@ export const ItemTile: React.FC<IItemTileProps> = ({ item }): JSX.Element => {
   const router = useRouter();
 
   const [imgUrl, setImgUrl] = useState(
-    item.name.startsWith("item_recipe")
+    item.recipe
       ? recipeCdnImage
       : `http://cdn.dota2.com/apps/dota2/images/items/${item.name.replace(
           /^item_/gm,
