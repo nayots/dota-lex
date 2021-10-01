@@ -33,7 +33,7 @@ export const ItemTile: React.FC<IItemTileProps> = ({ item }): JSX.Element => {
       <div className={styles.tileRoot_image}>
         <Image
           onClick={() => router.push(`/items/${item.name}`)}
-          title={item.localized_name}
+          title={`${item.localized_name} : ${item.cost} 💰`}
           src={imgUrl}
           alt={item.localized_name}
           layout="responsive"

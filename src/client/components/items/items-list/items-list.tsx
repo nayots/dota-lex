@@ -12,7 +12,7 @@ export interface IItemsListProps {
 export const ItemsList: React.FC<IItemsListProps> = ({
   items,
 }): JSX.Element => {
-  if (!items || items.length === 0) return <div>Loading...</div>;
+  if (!items || items.length === 0) return <div>No results :(</div>;
 
   return (
     <div className={styles.itemsListRoot}>
